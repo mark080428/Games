@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.menu{
+    height: 5vh;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.games-container{
+    background-image: linear-gradient(#f38ffa, #539eee) ;
+    height: 95vh;
+    overflow: scroll;
+}
+
+.menu-item{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.menu-item:hover{
+    transform: scale(1.1);
+    text-shadow: 0 0 10px #f38ffa;
+}
+
+.item1{
+    background-image: url(img/AmongUs.PNG);
+}
+
+.item2{
+    background-image: url(img/MCraft.PNG);
+    filter: contrast(200%) blur(5px);
+}
+
+
+.item3{
+    background-image: url(img/CS-GO.PNG);
+}
+
+.item4{
+    background-image: url(img/Fortnite.PNG);
+}
+
+.game{
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 600px;
+    float:left;
+    list-style: none;
+    margin: 20px 20px ;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center ;
+    filter:brightness(0.4);
+    opacity: 0.5;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.games{
+    margin: auto;
+    width: fit-content ;
+}
+
+.game:hover{
+    filter:none;
+    opacity: 1;
+    transform: translateY(-20px)
+}
+
+.game a{
+    margin-top: 450px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    background-color:skyblue ;
+    border-radius: 20px ;
+    padding: 20px;
+    width: 80%;
+    color: orange;
+}
